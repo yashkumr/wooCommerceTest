@@ -121,7 +121,7 @@ const Home = () => {
                         <>
                           <div className="productImgContainer crud-table-img">
                             <img
-                              src={`${import.meta.env.VITE_REACT_APP_MAIN_URL}${
+                              src={`${import.meta.env.VITE_REACT_APP_MAIN_URL}uploads/${
                                 picture.img
                               }`}
                               alt="images"
