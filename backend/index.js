@@ -14,10 +14,11 @@ export const app = express();
 dotenv.config();
 connectDb();
 
-app.use(express.static('uploads'));  
+ 
 //ES module fix
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 
 const buildpath = path.join(__dirname, "../frontend/dist")
